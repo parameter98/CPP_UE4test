@@ -23,4 +23,13 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+private:
+	UPROPERTY(VisibleAnywhere) //it means unreal property
+	UStaticMeshComponent* Mesh; //pointer meter
+	UPROPERTY(EditAnywhere, Category=BattleStat)
+	int32 HP;
+	UPROPERTY(EditAnywhere, Category = BattleStat)
+	int32 MP; 
+
 };
+  
