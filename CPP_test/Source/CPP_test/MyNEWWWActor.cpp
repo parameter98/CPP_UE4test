@@ -22,6 +22,9 @@ AMyNEWWWActor::AMyNEWWWActor()
 void AMyNEWWWActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	// category 이름 ,verbosity 중요도 로깅수준, 형식 , 인자
+	UE_LOG(LogTemp,Error, TEXT("BeginPlay %d"), 3);
 	
 }
 
@@ -29,6 +32,8 @@ void AMyNEWWWActor::BeginPlay()
 void AMyNEWWWActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	// category 를 정하면 그 category로만 log를 쓸 수 있음.
+	UE_LOG(LogTemp,Warning,TEXT("Logging now %f"),DeltaTime);
 
 }
 
