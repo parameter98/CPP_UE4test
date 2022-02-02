@@ -35,5 +35,6 @@ void AMyNEWWWActor::Tick(float DeltaTime)
 	// category 를 정하면 그 category로만 log를 쓸 수 있음.
 	UE_LOG(LogTemp,Warning,TEXT("Logging now %f"),DeltaTime);
 
+
 }
 

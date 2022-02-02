@@ -31,5 +31,6 @@ private:
 	UPROPERTY(EditAnywhere, Category = BattleStat)
 	int32 MP; 
 
+
 };
   
